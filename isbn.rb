@@ -12,6 +12,9 @@ def valid_isbn?(isbn)
 
   if isbn_arr.length == 9
     isbn_arr.each_with_index do |digit, pos|
+      unless digit.to_i.to_s == digit
+        return false
+      end
       isbn_sum += digit.to_i * (pos+1)
     end
     if isbn_sum % 11 == isbn_checkdigit
@@ -20,6 +23,9 @@ def valid_isbn?(isbn)
 
   elsif isbn_arr.length == 12
     isbn_arr.each_with_index do |digit, pos|
+      unless digit.to_i.to_s == digit
+        return false
+      end
       if (pos+1).even?
         isbn_sum += digit.to_i * 3
       else

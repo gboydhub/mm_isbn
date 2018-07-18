@@ -13,7 +13,6 @@ def valid_isbn?(isbn)
   if isbn_arr.length == 9
     isbn_arr.each_with_index do |digit, pos|
       isbn_sum += digit.to_i * (pos+1)
-      #print "#{pos+1}x#{digit.to_i}, "
     end
     if isbn_sum % 11 == isbn_checkdigit
       return true

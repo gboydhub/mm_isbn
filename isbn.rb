@@ -1,7 +1,9 @@
 def valid_isbn?(isbn)
   isbn_arr = isbn.split('')
+  isbn_arr.reject! {|x| x=='-'}
   isbn_sum = 0
   isbn_checkdigit = isbn_arr.pop
+
   if isbn_checkdigit.downcase == 'x'
     isbn_checkdigit = 10
   else

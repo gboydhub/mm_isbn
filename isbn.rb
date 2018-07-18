@@ -1,6 +1,6 @@
 def valid_isbn?(isbn)
   isbn_arr = isbn.split('')
-  isbn_arr.reject! {|x| x=='-'}
+  isbn_arr.reject! {|x| x=='-' || x==' '}
   isbn_sum = 0
   isbn_checkdigit = isbn_arr.pop
 

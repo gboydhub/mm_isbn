@@ -34,7 +34,6 @@ class TestISBN < Minitest::Test
     isbn_batch = ["4780470059029", "0-321@14653-0", "877195x869", "", " ", "-"]
     isbn_batch.each do |isbn|
       assert_equal(false, valid_isbn?(isbn))
-      p isbn
     end
   end
 end

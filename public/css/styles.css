@@ -2,13 +2,15 @@ body
 {
   background-color: darkslategrey;
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.2em;
+  background-image: url('/images/bookbg.jpg');
+  background-position: center;
 }
 
 table
 {
-  width: 8rem;
-  font-size: 1rem;
+  width: 8em;
+  font-size: 1em;
   font-weight: bold;
   text-align: left;
 }
@@ -17,31 +19,55 @@ table
   background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 0.4rem 1.1rem;
+  padding: 0.4em 1.1em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
-  margin: 0.5rem 0.5rem;
+  font-size: 1em;
+  margin: 0.5em 0.5em;
   cursor: pointer;
+  outline: none;
 }
 
 .title
 {
   font-family: 'Anton', sans-serif;
-  color: darkkhaki;
-  font-size: 3rem;
+  color: rgb(28, 173, 105);
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.popupbox
+{
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 25em;
+  padding: 1em 1em 0.2em 1em;
 }
 
 .txtbox
 {
-  width: 7rem;
+  width: 12em;
+  height: 14em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  outline: none;
+  resize: none;
+  overflow-y: hidden;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 5px;
 }
 
 .errormsg
 {
   color: lightcoral;
   font-weight: bolder;
-  font-size: 1.1rem;
+  font-size: 1.1em;
 }

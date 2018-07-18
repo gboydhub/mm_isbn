@@ -1,0 +1,6 @@
+<div class="popupbox">
+    <% isbns.each_with_index do |isbn, index| %>
+        <font color="<%=valids[index]%>"><%= isbn %></font><br>
+    <% end %>
+    <button class="btn" onclick="history.back();">Back</button>
+</div>
